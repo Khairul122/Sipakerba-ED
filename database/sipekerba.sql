@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2022 at 05:17 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.3.33
+-- Waktu pembuatan: 13 Bulan Mei 2024 pada 02.45
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,35 +24,34 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pengaduan`
+-- Struktur dari tabel `pengaduan`
 --
 
 CREATE TABLE `pengaduan` (
   `id` varchar(6) NOT NULL,
   `n_pelapor` varchar(30) NOT NULL,
-  `j_pelapor` varchar(30) NOT NULL,
-  `d_pelapor` varchar(30) NOT NULL,
-  `n_barang` varchar(30) NOT NULL,
-  `ket` varchar(100) NOT NULL,
+  `no_telp` varchar(30) NOT NULL,
+  `kritik` text NOT NULL,
+  `saran` text NOT NULL,
   `status` text NOT NULL,
   `ket_petugas` varchar(100) NOT NULL,
   `tgl_lapor` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `pengaduan`
+-- Dumping data untuk tabel `pengaduan`
 --
 
-INSERT INTO `pengaduan` (`id`, `n_pelapor`, `j_pelapor`, `d_pelapor`, `n_barang`, `ket`, `status`, `ket_petugas`, `tgl_lapor`) VALUES
-('NP0001', 'Doni', 'Staff', 'Media Informasi', 'Printer', 'Cartridge rusak', 'Selesai diproses', 'Cartridge telah diperbaiki dan dapat digunakan', '2020-12-22'),
-('NP0002', 'Doni', 'Staff', 'Media Informasi', 'Mouse', 'Tombol mouse rusak', 'Sedang diproses', '-', '2021-01-11'),
-('NP0003', 'Johan', 'Staff', 'Media Informasi', 'Proyektor', 'Tampilan buram', 'Sedang diproses', 'Proyektor sedang diperiksa oleh petugas', '2021-01-18'),
-('NP0004', 'Dedi', 'Staff', 'Media Informasi', 'Keyboard', 'Tidak dapat digunakan', 'Sedang diajukan', '-', '2022-12-31');
+INSERT INTO `pengaduan` (`id`, `n_pelapor`, `no_telp`, `kritik`, `saran`, `status`, `ket_petugas`, `tgl_lapor`) VALUES
+('NP0005', 'budi', '082165443677', 'a', 'a', 'Selesai diproses', '-', '2024-05-12'),
+('NP0006', 'Fajrio Harmon', '212121', 'sas', 'asa', 'Selesai diproses', '-', '2024-05-12'),
+('NP0007', 'Dedo', '812', 'Hai', 'Hai', 'Sedang diajukan', '-', '2024-05-13'),
+('NP0008', 'ASA', '112', 'asa', 'asa', 'Sedang diajukan', '-', '2024-05-13');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -65,7 +64,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `name`, `img`, `status`) VALUES
@@ -76,13 +75,13 @@ INSERT INTO `user` (`user_id`, `username`, `password`, `name`, `img`, `status`) 
 --
 
 --
--- Indexes for table `pengaduan`
+-- Indeks untuk tabel `pengaduan`
 --
 ALTER TABLE `pengaduan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);

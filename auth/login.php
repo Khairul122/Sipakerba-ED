@@ -40,10 +40,12 @@ if (isset($_POST['login'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | PT JASA RAHARJA</title>
+    <title>Login |KANTOR IMIGRASI KELAS II TPI LHOKSEUMAWE
+    </title>
     <!-- icon diskominfo -->
     <link rel="icon" href="../assets/dist/img/jasaraharja.jpeg">
     <!-- Bootstrap CSS -->
@@ -51,45 +53,49 @@ if (isset($_POST['login'])) {
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="row content">
-            <div class="col-md-6 mb-3">
-                <img src="../assets/dist/img/logojr.png" class="img-fluid" alt="login image">
-            </div>
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
             <div class="col-md-6">
-                <a class="btn logo" href="../index.php">PT JASA RAHARJA</a>
-                <p class="lead">Utama dalam Perlindungan,Prima dalam Pelayanan</p>
-                <h4 class="signin-text mb-3">Sign In</h4>
-                <form action="" method="post">
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" name="username" id="username" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password" id="password" required>
-                    </div>
-                    <div class="form-group form-check">
+                <div class="card">
+                    <div class="card-body">
                         
-                        <input type="checkbox" class="form-check-input" name="checkbox" id="checkbox">
-                        <label for="checkbox" class="form-check-label">Remember Me</label>
+                        <div class="text-center mb-4">
+                        <img src="../assets/img/logo.jpg" alt="Logo" style="height: 130px;">
+                            <a class="btn logo text-center" href="../index.php">IMIGRASI KELAS II TPI LHOKSEUMAWE</a>
+                        </div>
+                        <h4 class="signin-text text-center mb-3">Sign In</h4>
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" name="username" id="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" id="password" required>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" name="checkbox" id="checkbox">
+                                <label for="checkbox" class="form-check-label">Remember Me</label>
+                            </div>
+                            <button class="btn btn-signin" value="login" name="login">Login</button>
+                            <hr>
+                            <!-- <p class="text-center">Don't have an account? Register here!</p>
+                            <a href="sign-up.php" class="btn btn-signup">Sign up</a> -->
+                        </form>
                     </div>
-                    <button class="btn btn-signin" value="login" name="login">Login</button>
-                    <hr> 
-                    <p>Don't have an account? Register here!</p>
-                    <a href="sign-up.php" class="btn btn-signup">Sign up</a>
-                </form>
-                <br><center><p>By <a href='https://sharecodingan.blogspot.com/' title='sharecodingan.blogspot.com' target='_blank'>Cut Anggel Eriska</a></p></center>
-                
+                </div>
+                <br>
             </div>
         </div>
     </div>
-<!-- JavaScript -->
-<script src="assets/plugins/jquery/jquery.min.js"></script>
-<script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/bootstrap4/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -20,16 +20,14 @@ function insertPengaduan($data) {
     global $conn;
     date_default_timezone_set('Asia/Jakarta');
     $id = $data['id'];
-    $np = htmlspecialchars($data["nama"]);
-    $jp = htmlspecialchars($data["jabatan"]);
-    $dp = htmlspecialchars($data["dept"]);
-    $nb = htmlspecialchars($data["nama_barang"]);
-    $ket = mysqli_real_escape_string($conn, $data["ket"]);
+    $nama = htmlspecialchars($data["nama"]);
+    $kritik = htmlspecialchars($data["kritik"]);
+    $saran = htmlspecialchars($data["saran"]);
     $status = "Sedang diajukan";
     $ket_petugas = "-";
     $tgl_lapor = date("Y-m-d");
 
-    mysqli_query($conn, "INSERT INTO pengaduan VALUES('$id', '$np', '$jp', '$dp', '$nb', '$ket', '$status', '$ket_petugas', '$tgl_lapor')");
+    mysqli_query($conn, "INSERT INTO pengaduan VALUES('$id', '$nama', '$kritik', '$saran', '$status', '$ket_petugas', '$tgl_lapor')");
     return mysqli_affected_rows($conn);
 }
 
@@ -69,14 +67,25 @@ function updatePass($data) {
 
 function updatePengaduan($data) {
     global $conn;
-    
+
     $id = $data['id'];
     $status = $data['status'];
     $ket_petugas = $data['ket_petugas'];
-    mysqli_query($conn, "UPDATE pengaduan SET status = '$status', ket_petugas='$ket_petugas' WHERE id='$id'"); 
+    $kritik = $data['kritik'];
+    $saran = $data['saran'];
+
+    $query = "UPDATE pengaduan SET 
+                status = '$status', 
+                ket_petugas = '$ket_petugas',
+                kritik = '$kritik',
+                saran = '$saran'
+              WHERE id = '$id'";
+    
+    mysqli_query($conn, $query);
 
     return mysqli_affected_rows($conn);
 }
+
 
 function updatePhoto($data) {
     global $conn;

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PT JASA RAHARJA</title>
+    <title>IMIGRASI KELAS II TPI LHOKSEUMAWE
+    </title>
     <!-- icon diskominfo -->
-    <link rel="icon" href="assets/dist/img/jasaraharja.jpeg">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap4/css/bootstrap.min.css">
     <!-- Custom CSS -->
@@ -18,8 +18,10 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <img class="logo" src="assets/dist/img/jasaraharja.jpeg">
-      <a class="navbar-brand" href="index.php">PT JASA RAHARJA</a>
+      <img src="./assets/img/logo.jpg" alt="Logo" style="height: 50px; padding-right: 20px;">
+      <a class="navbar-brand" href="index.php">
+        IMIGRASI KELAS II TPI LHOKSEUMAWE
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,8 +40,10 @@
       </div>
     </div>
   </nav>
+
+
   <!-- end navbar -->
   <!-- header -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <img src="assets/img/homepage.svg">
+     

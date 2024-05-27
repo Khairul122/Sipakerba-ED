@@ -27,7 +27,7 @@ $urutan++;
 $huruf = "NP";
 $kodeBarang = $huruf . sprintf("%04s", $urutan);
 ?>      
-      <h1 style="margin-top: -40px;">Form Pengaduan Kerusakan Barang</h1>
+      <h1 style="margin-top: -40px;">Form Kritik Dan Saran Anda</h1>
       <form action="" method="POST">
         <div class="form-row p-3">
           <div class="form-group">
@@ -36,24 +36,16 @@ $kodeBarang = $huruf . sprintf("%04s", $urutan);
               <p class="text-sm"><span style="color: red;">*</span>Harap catat kode ini untuk melakukan pengecekan sendiri melalui kolom pencarian.</p>
           <div>
           <div class="form-group">
-              <label for="nama">Nama Pelapor</label>
+              <label for="nama">Nama Anda</label>
               <input type="text" name="nama" id="nama" class="form-control"  required>
           <div>
           <div class="form-group">
-              <label for="jabatan">Jabatan Pelapor</label>
-              <input type="text" name="jabatan" id="jabatan" class="form-control" required>
+              <label for="kritik">Kritik</label>
+              <textarea name="kritik" id="kritik" class="form-control" required></textarea>
           <div>
           <div class="form-group">
-              <label for="dept">Departemen</label>
-              <input type="text" name="dept" id="dept" class="form-control" required>
-          <div>
-          <div class="form-group">
-              <label for="nama_barang">Nama Barang</label>
-              <input type="text" name="nama_barang" id="nama_barang" class="form-control" required>
-          <div>
-          <div class="form-group">
-              <label for="ket">Keterangan</label>
-              <textarea name="ket" id="ket" class="form-control" required></textarea>
+              <label for="saran">Saran</label>
+              <textarea name="saran" id="saran" class="form-control" required></textarea>
           <div>
           <button class="btn btn-outline-success mt-3 mr-3" type="submit" name="submit" style="width: 100px;"><span class="fas fa-paper-plane mr-2"></span>Kirim</button>
           <button class="btn btn-outline-danger mt-3" type="reset" name="reset" style="width: 130px;"><span class="fas fa-undo mr-2"></span>Reset Form</button>

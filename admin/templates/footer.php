@@ -2,7 +2,7 @@
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
     </div>
-    <strong>© 2014 - 2023 PT Jasa Raharja.</strong> All rights reserved. | Repost by <a href='https://sharecodingan.blogspot.com/' title='sharecodingan.blogspot.com' target='_blank'>Cut Anggel Eriska</a>
+   
     
   </footer>
 

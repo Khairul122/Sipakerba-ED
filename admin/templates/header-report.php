@@ -11,7 +11,8 @@ include '../function.php';
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Report Data Pengaduan Kerusakan Barang PT JASA RAHARJA</title>
+  <title>Report Data Kritik Dan Saran KANTOR IMIGRASI KELAS II TPI LHOKSEUMAWE
+</title>
   <link rel="icon" href="../assets/dist/img/jasa raharja-logo.png">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">

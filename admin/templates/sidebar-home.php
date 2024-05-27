@@ -15,7 +15,7 @@
             <a href="data-pengaduan.php" class="nav-link">
               <i class="nav-icon fas fa-database"></i>
               <p>
-                Data Pengaduan
+               Data Masuk
               </p>
             </a>
           </li>
