@@ -15,7 +15,6 @@ require 'function.php';
         <p>Nomor : <?= $d['id']; ?></p>
         <p>Tanggal Pengaduan : <?= date('d-m-Y', strtotime($d['tgl_lapor'])); ?></p>
         <p>Nama Anda : <?= $d['n_pelapor']; ?></p>
-        <p>Departemen : <?= $d['no_telp']; ?></p>
         <p>Kritik : <?= $d['kritik']; ?></p>
         <p>Saran : <?= $d['saran']; ?></p>
         <p>Status : <?= $d['status']; ?></p>

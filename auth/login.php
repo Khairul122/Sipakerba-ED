@@ -63,9 +63,9 @@ if (isset($_POST['login'])) {
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        
+
                         <div class="text-center mb-4">
-                        <img src="../assets/img/logo.jpg" alt="Logo" style="height: 130px;">
+                            <img src="../assets/img/logo.jpg" alt="Logo" style="height: 130px;">
                             <a class="btn logo text-center" href="../index.php">IMIGRASI KELAS II TPI LHOKSEUMAWE</a>
                         </div>
                         <h4 class="signin-text text-center mb-3">Sign In</h4>
@@ -84,6 +84,9 @@ if (isset($_POST['login'])) {
                             </div>
                             <button class="btn btn-signin" value="login" name="login">Login</button>
                             <hr>
+                            <div class="form-group">
+                                <a href="forgot-password.php" class="form-check-label">Forgot Password?</a>
+                            </div>
                             <!-- <p class="text-center">Don't have an account? Register here!</p>
                             <a href="sign-up.php" class="btn btn-signup">Sign up</a> -->
                         </form>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Bulan Mei 2024 pada 02.45
+-- Waktu pembuatan: 02 Jun 2024 pada 18.02
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.4.10
 
@@ -30,7 +30,6 @@ SET time_zone = "+00:00";
 CREATE TABLE `pengaduan` (
   `id` varchar(6) NOT NULL,
   `n_pelapor` varchar(30) NOT NULL,
-  `no_telp` varchar(30) NOT NULL,
   `kritik` text NOT NULL,
   `saran` text NOT NULL,
   `status` text NOT NULL,
@@ -42,11 +41,8 @@ CREATE TABLE `pengaduan` (
 -- Dumping data untuk tabel `pengaduan`
 --
 
-INSERT INTO `pengaduan` (`id`, `n_pelapor`, `no_telp`, `kritik`, `saran`, `status`, `ket_petugas`, `tgl_lapor`) VALUES
-('NP0005', 'budi', '082165443677', 'a', 'a', 'Selesai diproses', '-', '2024-05-12'),
-('NP0006', 'Fajrio Harmon', '212121', 'sas', 'asa', 'Selesai diproses', '-', '2024-05-12'),
-('NP0007', 'Dedo', '812', 'Hai', 'Hai', 'Sedang diajukan', '-', '2024-05-13'),
-('NP0008', 'ASA', '112', 'asa', 'asa', 'Sedang diajukan', '-', '2024-05-13');
+INSERT INTO `pengaduan` (`id`, `n_pelapor`, `kritik`, `saran`, `status`, `ket_petugas`, `tgl_lapor`) VALUES
+('NP0001', 'abc', 'hai1', 'hai1\r\n', 'Selesai diproses', 'Hai1', '2024-05-27');
 
 -- --------------------------------------------------------
 
@@ -60,15 +56,17 @@ CREATE TABLE `user` (
   `password` varchar(255) NOT NULL,
   `name` varchar(30) NOT NULL,
   `img` varchar(255) NOT NULL,
-  `status` tinyint(4) NOT NULL
+  `status` tinyint(4) NOT NULL,
+  `security_question` varchar(255) DEFAULT NULL,
+  `security_answer` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `password`, `name`, `img`, `status`) VALUES
-('1', 'admin', '$2y$10$vx9rULGqEcbI1khsJ2su8eRHIhZlpmvQW5sPZu3jmk471MtfaNqrm', 'Admin', '1617430645_admin2.png', 1);
+INSERT INTO `user` (`user_id`, `username`, `password`, `name`, `img`, `status`, `security_question`, `security_answer`) VALUES
+('1', 'admin', '$2y$10$gfN4JtShw3kdf/8tu4ui5eSnvysKqcl6pGhEtFcz7J7woedhMjT8G', 'Admin', '1617430645_admin2.png', 1, 'Siapa pembuat sistem ini?', 'nurul ashabul');
 
 --
 -- Indexes for dumped tables
